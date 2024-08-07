@@ -1,6 +1,108 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap');
+
+
+/* ejemplo de box model
 article {
     border-bottom: 2px rgb(146, 20, 20) dotted;
     padding: 3rem 8rem;
     margin: 2rem;
 }
+    */
+    /* ejemplo
+    .primer {
+        line-height: 2rem;
+        color: blueviolet;
+    }
+    .parrafo {
+        line-height: 2.5;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: crimson;
+    }
+    #lista {
+        list-style: none;
+        font-size: .6;
+        color: aqua;
+        line-height: 1.4;
+    }
+        */
+     /* Reticula */
+     
+     body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: ;
+     }
+     header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+     }
+     main {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 1rem;
+     }
+     footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+     }
+
+     /* estilos de navegación */
+
+    #logo {
+        width: 50px;
+    }
+    nav {
+        background-color: cadetblue;
+        padding: 1rem 3rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;  
+    }
+    nav ul a {
+        text-decoration: none;
+        padding: 2rem;
+    }
+
+    /* estilo de footer */
+
+    footer {
+       background-color: brown;
+       padding: 3rem;
+    }
+    /* estilos tipograficos */
+    h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 5rem;
+    }
+    .primer {
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+    .parrafo {
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+
+    }
+    figcaption {
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+    /* estilos de imagen */
+
+    #imagcent {
+        width: 100%;
+        object-fit: cover;
+    }
