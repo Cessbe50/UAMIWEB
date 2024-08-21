@@ -1,0 +1,32 @@
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+/* Columnas */
+
+.columnas {
+    columns: 3 400px;
+    column-gap: 1rem;
+}
+
+/* Imagen */
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.clip-me {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.recortado {
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50%);
+    margin-left: -100px;
+}
+
+/* Margen del contenido principla */
+main {
+    margin: 0 1rem;
+}
