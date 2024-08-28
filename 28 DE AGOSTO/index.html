@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIDERMAN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        svg {
+            width: 50%;
+        }
+    </style>
+</head>
+<header>CABEZA</header>
+<body>
+    <div class="container">
+       <main>
+           <h1>Spider-man</h1>
+           <p>Spider-Man, traducido en ocasiones como el Hombre Araña, es un personaje creado por los estadounidenses Stan Lee y Steve Ditko,Introducido en el cómic Amazing Fantasy n.° 15, publicado por Marvel Comics en agosto de 1962. Se trata de un superhéroe que emplea sus habilidades sobrehumanas, reminiscentes de una araña, para combatir a otros supervillanos que persiguen fines siniestros.</p>
+           <div id="my-div"></div>
+       </main>
+       <aside>
+        <p>Aside</p>
+       </aside>
+       <footer>
+             <p>marvelitas</p>
+       </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+       new Vivus ('my-div', {duration: 200, type: 'delayed', file: 'img/spider2.svg'},);
+    </script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+ScrollReveal().reveal('.header', { delay: 200, distance: '150', origin: 'top'});
+ScrollReveal().reveal('.main', { delay: 500, scale: 0.85 });
+ScrollReveal().reveal('.lado', { delay: 2000 });
+</script>
+ 
+
+</body>
+</html>
